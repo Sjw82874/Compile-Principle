@@ -1,0 +1,42 @@
+F-> IDN a
+T-> F 
+E-> T 
+F-> INT10 13
+T-> F 
+E-> T 
+C-> E < E 
+F-> INT16 0xa5
+T-> F 
+E-> T 
+F-> INT10 65
+T-> F 
+E-> E + T 
+S-> IDN = E c
+S-> WHILE C DO S 
+L-> S ; 
+F-> IDN a
+T-> F 
+E-> T 
+F-> INT10 13
+T-> F 
+E-> T 
+C-> E < E 
+F-> IDN a
+T-> F 
+E-> T 
+F-> INT10 b
+T-> F 
+E-> T 
+C-> E < E 
+F-> INT8 6
+T-> F 
+E-> T 
+F-> INT10 65
+T-> F 
+E-> E + T 
+S-> IDN = E c
+S-> IF C THEN S 
+S-> WHILE C DO S 
+L-> S ; 
+P-> L 
+P-> L P 
